@@ -20,7 +20,7 @@ flag=0
 	
 #iplist="ip.txt"
 
-wget --quiet -O iplist.txt https://raw.githubusercontent.com/rasta-team/MyVPS/master/ip.txt
+wget --quiet -O iplist.txt https://raw.githubusercontent.com/Y4suf/ssl/master/ip.txt
 
 #if [ -f iplist ]
 #then
@@ -42,7 +42,7 @@ done
 if [ $flag -eq 0 ]
 then
    echo  "Maaf, hanya IP @ Password yang terdaftar sahaja boleh menggunakan script ini!
-Hubungi: ABE PANG (+0169872312) Telegram : @myvpn007"
+Hubungi: Orang Ganteng | Wa 0895703796928"
 
 rm -f /root/iplist.txt
 
@@ -70,9 +70,8 @@ sed -i '$ i\echo 1 > /proc/sys/net/ipv6/conf/all/disable_ipv6' /etc/rc.local
 apt-get update
 apt-get -y install wget curl
 
-#set time zone malaysia
-echo "SET TIMEZONE KUALA LUMPUT GMT +8"
-ln -fs /usr/share/zoneinfo/Asia/Kuala_Lumpur /etc/localtime;
+# set time GMT +7
+ln -fs /usr/share/zoneinfo/Asia/Jakarta /etc/localtime
 clear
 
 # set locale
