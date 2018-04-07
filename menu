@@ -100,7 +100,7 @@ function used_data(){
 	echo -e "\e[032;1mTotal amount of ram:\e[0m $tram MB"
 	echo -e "\e[032;1mTotal amount of swap:\e[0m $swap MB"
 	echo -e "\e[032;1mSystem uptime:\e[0m $up"
-	echo -e "\e[032;1mScript by:\e[0m Orang Ganteng | 0895703796928"
+	echo -e "          \e[032;1mScript by:\e[0m Orang Ganteng | 0895703796928"
 	date +"                    %A, %d-%m-%Y" 
         date +"                    %H:%M:%S %Z" 
 	echo "------------------------------------------------------------------------------"
