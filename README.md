@@ -16,11 +16,12 @@ wget -O debian7.sh https://raw.githubusercontent.com/Y4suf/MyVPS/master/debian7.
 ## Description
 
 ### What's server included
-Setup by Ibnu Fachrizal
+Setup by Orang Tamvan
 * OpenVPN  : TCP 1194 (client config : http://$MYIP:81/client.ovpn)
 * OpenSSH  : 22, 143
-* Dropbear : 80, 109, 110, 443
-* Squid3   : 8080, 8000, 3128 (limit to IP SSH)
+* Dropbear : 80, 109, 110, 22507
+* SSL/TSL. : 443
+* Squid3   : 8080, 8000, 3128 (limit to IP SSH)
 * badvpn   : badvpn-udpgw port 7300
 * nginx    : 81
 
