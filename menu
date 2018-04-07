@@ -180,12 +180,12 @@ function used_data(){
         6)
             userdelete
             ;;		
-		7)
-		    clear
-	        userlogin
-			;;
-		8)
-		    clear
+        7)
+            clear
+	    userlogin
+            ;;
+	8)
+            clear
 			autolimit
 			;;	
 		9)
