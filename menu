@@ -149,7 +149,7 @@ function used_data(){
 	echo ""
 	echo "Update Premium Script"
 	echo -e "\e[031;1m38\e[0m) Update Now (\e[34;1mupdate\e[0m)"
-	echo -e "\e[031;1m38\e[0m) Update Menu (\e[34;1mupdate-menu\e[0m)"
+	echo -e "\e[031;1m39\e[0m) Update Menu (\e[34;1mupdate-menu\e[0m)"
 	echo ""
 	echo -e "\e[031;1m x\e[0m) Exit"
 	read -p "Masukkan pilihan anda, kemudian tekan tombol ENTER: " option1
