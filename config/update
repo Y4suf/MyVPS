@@ -23,7 +23,7 @@ flag=0
 
 #iplist="ip.txt"
 
-wget --quiet -O iplist.txt https://raw.githubusercontent.com/rasta-team/MyVPS/master/ip.txt
+wget --quiet -O iplist.txt https://raw.githubusercontent.com/Y4suf/MyVPS/master/ip.txt
 
 #if [ -f iplist ]
 #then
