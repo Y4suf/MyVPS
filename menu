@@ -107,7 +107,7 @@ function used_data(){
 	date +"                       #     %A, %d-%m-%Y     #" 
         date +"                       #        %H:%M:%S %Z         #" 
 	echo "------------------------------------------------------------------------------"
-	echo -e "\e[036Smeputar Detail SSH & OpenVPN\e[0m"
+	echo -e "\e[036mSeputar Detail SSH & OpenVPN\e[0m"
 	echo -e "  \e[031;1m 1\e[0m) \e[033;1mCreate Akun SSH/OpenVPN (\e[34;1muser-add\e[0m)"
 	echo -e "  \e[031;1m 2\e[0m) \e[033;1mGenerate Akun SSH/OpenVPN (\e[34;1muser-gen\e[0m)"
 	echo -e "  \e[031;1m 3\e[0m) \e[033;1mGenerate Akun Trial (\e[34;1muser-trial\e[0m)"
@@ -223,7 +223,7 @@ function used_data(){
                echo "-----------------------------"
                echo "AUTO KILL MULTI LOGIN SELESAI"
                ;;
-        13)
+            13)
                clear
                userban
 	          ;;
@@ -233,11 +233,11 @@ function used_data(){
 	          ;;
 	    15)
 	        clear
-            userlock
+                userlock
 			;;
 		16)
 		    clear
-            userunlock
+                    userunlock
 			;;
 		17)
 		    clear
