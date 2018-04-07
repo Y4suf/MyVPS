@@ -114,7 +114,7 @@ function used_data(){
 	echo -e "  \e[032;1m 4\e[0m\e[037;1m)\e[0m \e[031;1mGanti Password Akun SSH/VPN\e[0m (\e[37;1muser-pass\e[0m)"
 	echo -e "  \e[032;1m 5\e[0m\e[037;1m)\e[0m \e[031;1mTambah Masa Aktif Akun SSH/OpenVPN\e[0m (\e[37;1muser-renew\e[0m)"
 	echo -e "  \e[032;1m 6\e[0m\e[037;1m)\e[0m \e[031;1mHapus Akun SSH/OpenVPN\e[0m (\e[37;1muser-del\e[0m)"
-	echo -e "  \e[033;1m 7\e[0m\e[037;1m)\e[0m \e[031;1mCek Login Dropbear & OpenSSH\e[0m (\e[37;1muser-login\e[0m)"
+	echo -e "  \e[032;1m 7\e[0m\e[037;1m)\e[0m \e[031;1mCek Login Dropbear & OpenSSH\e[0m (\e[37;1muser-login\e[0m)"
 	echo -e "  \e[032;1m 8\e[0m\e[037;1m)\e[0m \e[031;1mAuto Limit Multi Login\e[0m (\e[37;1mauto-limit\e[0m)"
 	echo -e "  \e[032;1m 9\e[0m\e[037;1m)\e[0m \e[031;1mMelihat Detail user SSH & OpenVPN\e[0m (\e[37;1muser-detail\e[0m)"
 	echo -e "  \e[032;1m10\e[0m\e[037;1m)\e[0m \e[031;1mList Akun dan Expire Date\e[0m (\e[37;1muser-list\e[0m)"
