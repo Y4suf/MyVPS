@@ -107,7 +107,7 @@ function used_data(){
 	date +"                                %A, %d-%m-%Y" 
         date +"                                   %H:%M:%S %Z" 
 	echo "------------------------------------------------------------------------------"
-	echo -e "\e[034;1mSeputar Detail SSH & OpenVPN\e[0m"
+	echo -e "\e[035;1mSeputar Detail SSH & OpenVPN\e[0m"
 	echo -e "  \e[031;1m 1\e[0m) Create Akun SSH/OpenVPN (\e[34;1muser-add\e[0m)"
 	echo -e "  \e[031;1m 2\e[0m) Generate Akun SSH/OpenVPN (\e[34;1muser-gen\e[0m)"
 	echo -e "  \e[031;1m 3\e[0m) Generate Akun Trial (\e[34;1muser-trial\e[0m)"
