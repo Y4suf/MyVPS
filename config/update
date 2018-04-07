@@ -6,7 +6,7 @@ red='\e[1;31m'
                green='\e[0;32m'
                NC='\e[0m'
 			   
-               echo "Connecting to rasta-server.net..."
+               echo "Connecting to Orang-Ganteng.com..."
                sleep 2
 			   
 			   echo "Connecting to your ip : $myip ...."
