@@ -127,7 +127,7 @@ function used_data(){
 	echo -e "  \e[031;1m17\e[0m) Melihat Daftar user yang terkick oleh perintah user-limit (\e[34;1mlog-limit\e[0m)"
 	echo -e "  \e[031;1m18\e[0m) Melihat Daftar user yang terbanned oleh perintah user-ban (\e[34;1mlog-ban\e[0m)"
         echo ""
-	echo -e "\e[35mSeputar Detail PPTP VPN\e[0m"
+	echo -e "\e[33m;1mSeputar Detail PPTP VPN\e[0m"
 	echo -e "  \e[031;1m19\e[0m) Create Akun PPTP VPN (\e[34;1muser-add-pptp\e[0m)"
 	echo -e "  \e[031;1m20\e[0m) Hapus Akun PPTP VPN (\e[34;1muser-delete-pptp\e[0m)"
 	echo -e "  \e[031;1m21\e[0m) Lihat Detail Akun PPTP VPN (\e[34;1mdetail-pptp\e[0m)"
