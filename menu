@@ -8,7 +8,7 @@ myint=`ifconfig | grep -B1 "inet addr:$myip" | head -n1 | awk '{print $1}'`;
 	       purple='\e[35m'
                NC='\e[0m'
 			   
-               echo "Connecting to rasta-server.net..."
+               echo "Connecting to Orang-Ganteng.com..."
 			   sleep 1
 			   
 			   echo "Connecting to your ip : $myip ...."
@@ -203,12 +203,12 @@ function used_data(){
 	    12)
 	          clear
 	          #!/bin/bash
-              # Created by rasta-team.net
+              # Created by Orang Ganteng
               
               red='\e[1;31m'
               green='\e[0;32m'
               NC='\e[0m'
-              echo "Connecting to rasta-team.net..."
+              echo "Connecting to Oranh-Ganteng.com..."
               sleep 0.2
 			  echo "Connecting to your ip : $myip ...."
               sleep 2
@@ -278,7 +278,7 @@ function used_data(){
             green='\e[0;32m'
             blue='\e[1;34m'
             NC='\e[0m'
-            echo "Connecting to rasta-team.net..."
+            echo "Connecting to Orang-Ganteng.com..."
             sleep 0.2
 			echo "Connecting to your ip : $myip ...."
             sleep 2
@@ -289,7 +289,7 @@ function used_data(){
             echo""
             echo "Speed Test Server"
             ./speedtest.py --share
-            echo "Hasil Speed test diatas Script by Rasta-Team.net"
+            echo "Hasil Speed test diatas Script by Orang Ganteng"
             ;;
         26)
             free -m
@@ -322,24 +322,24 @@ function used_data(){
             clear
             echo "Service Openvpn restart .................tunggu sebentar"
             service openvpn restart
-            echo "Restart OpenVPN selesai Script By Rasta-Team.net"
+            echo "Restart OpenVPN selesai Script By Orang Ganteng"
 			;;	
 		31)
             clear
             echo "Servie dropbear restart .................tunggu sebentar"
             service dropbear restart
-            echo "Restart Dropbear selesai Script By Rasta-Team.net"
+            echo "Restart Dropbear selesai Script By Orang Ganteng"
             ;;
 		32) 
 		    clear
 		    echo "Service Squid restart .................tunggu sebentar"
 			service squid3 restart
-			echo "Restart Squid selesai Script By Rasta-Team.net"
+			echo "Restart Squid selesai Script By Orang Ganteng"
 			;;
 		33)
 		    clear
 		    /etc/init.d/webmin restart
-		    echo "Restart Webmin selesai Script By Rasta-Team.net"
+		    echo "Restart Webmin selesai Script By Orang Ganteng"
 		    ;;
 		34)
 		    clear
@@ -352,7 +352,7 @@ function used_data(){
 		36)
                    clear
 			echo "Masukan HOSTNAME VPS, yang mau diganti :"
-            echo "  contoh : " hostname Rasta-Team 
+            echo "  contoh : " hostname Orang-Ganteng
             ;;
 		37)
 		    clear
