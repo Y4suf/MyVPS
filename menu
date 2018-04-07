@@ -4,6 +4,8 @@ myint=`ifconfig | grep -B1 "inet addr:$myip" | head -n1 | awk '{print $1}'`;
 
  red='\e[1;31m'
                green='\e[0;32m'
+	       blue='\e[34m'
+	       purple='\e[35m'
                NC='\e[0m'
 			   
                echo "Connecting to rasta-server.net..."
