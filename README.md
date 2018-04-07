@@ -8,7 +8,7 @@ INSTAL VPS DEBIAN 7 ( 32/64 ) KVM & OVZ
 
 
 * wget -O debian7.sh https://raw.githubusercontent.com/Y4suf/MyVPS/master/debian7.sh && chmod +x debian7.sh && ./debian7.sh
-* wget -O setunnel https://raw.githubusercontent.com/Y4suf/MyVPS/master/setunnel/setunnel.sh && chmod +x setunnel.sh && ./setunnel.sh
+* wget https://raw.githubusercontent.com/Y4suf/MyVPS/master/setunnel/setunnel.sh && bash setunnel.sh
 
 
 
