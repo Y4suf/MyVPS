@@ -1,4 +1,4 @@
-Automatic Script Installer by Orang Tampan
+Automatic Script Installer by Orang Tamvan
 
 ==========
 
@@ -45,5 +45,5 @@ Setup by Orang Tamvan
 VPS REBOOT TIAP JAM 24.00 !
 Please Reboot your VPS !
 
-* Script Created By Ibnu Fachrizal
-* Terimakasih telah berlangganan di www.sshinjector.net
+* Script Created By Orang Tamvan
+* Terimakasih telah berlangganan
