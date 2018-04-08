@@ -1,10 +1,10 @@
             #!/bin/bash
-            # Created by rasta-team.net
+            # Created by Orang Ganteng
             
             red='\e[1;31m'
             green='\e[0;32m'
             NC='\e[0m'
-            echo "Connecting to rasta-team.net..."
+            echo "Connecting to Orang-Ganteng.com..."
             sleep 0.2
             echo "Checking Permision..."
             sleep 0.3
@@ -19,18 +19,25 @@
             expire=$(date -d "$aktif days" +"%Y-%m-%d")
             
             echo""
-            echo "Script by rasta-team.net"
-            echo "Terima kasih sudah berlangganan di rasta-team.net"
+            echo "Script By Orang-Ganteng.com"
+            echo "Terima Kasih Sudah Berlangganan"
             echo " "
-            echo "Detail Account"
-            echo "----------------------------------"
+	    echo ""
+	    echo "======================================"
+            echo "Detail Account SSH"
+            echo "-------------------------------------"
             echo "Host/IP         : $IP"
-            echo "Dropbear Port   : 80, 109, 110, 443"
+            echo "Dropbear Port   : 80, 109, 110, 22507"
             echo "OpenSSH Port    : 22 , 143"
+	    echo "SSL/TLS         : 443
             echo "Squid Proxy     : 8080, 8000, 3128"
             echo "OpenVPN Config  : http://$IP:81/client.ovpn"
             echo "Aktif Sampai    : $(date -d "$aktif days" +"%d-%m-%Y")"
-            echo "----------------------------------"
+            echo "-------------------------------------"
+	    echo "Baca & Patuhi TOS/Terms Of Service"
+            echo " NO CARDING, TORRENT, ILEGAL CONTENT"
+            echo "-------------------------------------"
+	    echo "======================================"
             for (( i=1; i <= $banyakuser; i++ ))
             do
          	USER=`cat /dev/urandom | tr -dc 'a-zA-Z0-9' | fold -w 15 | head -n 1`
