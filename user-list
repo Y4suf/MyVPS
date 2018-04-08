@@ -1,9 +1,9 @@
 #!/bin/bash
-# Created by http://www.sshinjector.net
+# Created by Orang Ganteng
 red='\e[1;31m'
 green='\e[0;32m'
 NC='\e[0m'
-echo "Connecting to sshinjector.net..."
+echo "Connecting to Orang-Ganteng.com..."
 sleep 0.1
 echo "Checking Permision..."
 sleep 0.2
@@ -35,7 +35,7 @@ do
 done < /etc/passwd
 JUMLAH="$(awk -F: '$3 >= '$UIDN' && $1 != "nobody" {print $1}' /etc/passwd | wc -l)"
 echo "-------------------------------"
-echo "Jumlah Akun : $JUMLAH USER"
+echo "Jumlah User  : $JUMLAH USER"
 echo "-------------------------------"
 echo " "
 echo "===============================================";
