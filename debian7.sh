@@ -66,9 +66,8 @@ cd
 echo 1 > /proc/sys/net/ipv6/conf/all/disable_ipv6
 sed -i '$ i\echo 1 > /proc/sys/net/ipv6/conf/all/disable_ipv6' /etc/rc.local
 
-# install wget and curl
-apt-get update
-apt-get -y install wget curl
+# wget and curl
+apt-get update;apt-get -y install wget curl;
 
 # set time GMT +7
 ln -fs /usr/share/zoneinfo/Asia/Jakarta /etc/localtime
@@ -77,6 +76,20 @@ clear
 # set locale
 sed -i 's/AcceptEnv/#AcceptEnv/g' /etc/ssh/sshd_config
 service ssh restart
+
+# set repo
+wget -O /etc/apt/sources.list $source/file/sources.list.debian7
+wget "http://www.dotdeb.org/dotdeb.gpg"
+wget "http://www.webmin.com/jcameron-key.asc"
+cat dotdeb.gpg | apt-key add -;rm dotdeb.gpg
+cat jcameron-key.asc | apt-key add -;rm jcameron-key.asc
+
+# remove unused
+apt-get -y --purge remove samba*;
+apt-get -y --purge remove apache2*;
+apt-get -y --purge remove sendmail*;
+apt-get -y --purge remove bind9*;
+apt-get -y --purge remove dropbear*;
 
 # update
 apt-get update 
@@ -188,11 +201,11 @@ echo "/usr/sbin/nologin" >> /etc/shells
 service ssh restart
 service dropbear restart
 
-# upgrade dropbear 2017
+# upgrade dropbear 2016
 apt-get install zlib1g-dev
-wget https://matt.ucc.asn.au/dropbear/releases/dropbear-2017.75.tar.bz2
-bzip2 -cd dropbear-2017.75.tar.bz2  | tar xvf -
-cd dropbear-2017.75
+wget https://matt.ucc.asn.au/dropbear/releases/dropbear-2016.74.tar.bz2
+bzip2 -cd dropbear-2016.74.tar.bz2  | tar xvf -
+cd dropbear-2016.74
 ./configure
 make && make install
 mv /usr/sbin/dropbear /usr/sbin/dropbear1
@@ -202,19 +215,55 @@ service dropbear restart
 # install stunnel4
 wget https://raw.githubusercontent.com/Y4suf/ssl/master/stunnel.sh && bash stunnel.sh
 
-# install vnstat gui
+# VNSTAT
 cd /home/vps/public_html/
 wget https://raw.githubusercontent.com/Y4suf/MyVPS/master/vnstat_php_frontend-1.5.1.tar.gz
 tar xf vnstat_php_frontend-1.5.1.tar.gz
 rm vnstat_php_frontend-1.5.1.tar.gz
 mv vnstat_php_frontend-1.5.1 vnstat
 cd vnstat
-sed -i "s/\$iface_list = array('eth0', 'sixxs');/\$iface_list = array('eth0');/g" config.php
-sed -i "s/\$language = 'nl';/\$language = 'en';/g" config.php
-sed -i 's/Internal/Internet/g' config.php
-sed -i '/SixXS IPv6/d' config.php
-sed -i "s/\$locale = 'en_US.UTF-8';/\$locale = 'en_US.UTF+8';/g" config.php
-cd
+if [[ `ifconfig -a | grep "venet0"` ]]
+then
+cekvirt='OpenVZ'
+elif [[ `ifconfig -a | grep "venet0:0"` ]]
+then
+cekvirt='OpenVZ'
+elif [[ `ifconfig -a | grep "venet0:0-00"` ]]
+then
+cekvirt='OpenVZ'
+elif [[ `ifconfig -a | grep "venet0-00"` ]]
+then
+cekvirt='OpenVZ'
+elif [[ `ifconfig -a | grep "eth0"` ]]
+then
+cekvirt='KVM'
+elif [[ `ifconfig -a | grep "eth0:0"` ]]
+then
+cekvirt='KVM'
+elif [[ `ifconfig -a | grep "eth0:0-00"` ]]
+then
+cekvirt='KVM'
+elif [[ `ifconfig -a | grep "eth0-00"` ]]
+then
+cekvirt='KVM'
+fi
+if [ $cekvirt = 'KVM' ]; then
+	sed -i 's/eth0/eth0/g' config.php
+	sed -i "s/\$iface_list = array('eth0', 'sixxs');/\$iface_list = array('eth0');/g" config.php
+	sed -i "s/\$language = 'nl';/\$language = 'en';/g" config.php
+	sed -i 's/Internal/Internet/g' config.php
+	sed -i '/SixXS IPv6/d' config.php
+	cd
+elif [ $cekvirt = 'OpenVZ' ]; then
+	sed -i 's/eth0/venet0/g' config.php
+	sed -i "s/\$iface_list = array('venet0', 'sixxs');/\$iface_list = array('venet0');/g" config.php
+	sed -i "s/\$language = 'nl';/\$language = 'en';/g" config.php
+	sed -i 's/Internal/Internet/g' config.php
+	sed -i '/SixXS IPv6/d' config.php
+	cd
+else
+	cd
+fi
 
 # install fail2ban
 apt-get -y install fail2ban;
@@ -275,7 +324,7 @@ wget https://raw.githubusercontent.com/Y4suf/MyVPS/master/config/update
 mv ./update /usr/bin/update
 chmod +x /usr/bin/update
 
-# install Buat Akun SSH/OpenVPN
+# install Create Akun SSH/OpenVPN
 cd
 wget https://raw.githubusercontent.com/Y4suf/MyVPS/master/config/buatakun
 mv ./buatakun /usr/bin/buatakun
