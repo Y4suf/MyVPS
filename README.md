@@ -6,11 +6,8 @@ Usage
 
 INSTAL VPS DEBIAN 7 ( 32/64 ) KVM & OVZ
 
-
+* apt-get install ca-certificates
 * wget -O debian7.sh https://raw.githubusercontent.com/Y4suf/MyVPS/master/debian7.sh && chmod +x debian7.sh && ./debian7.sh
-* wget https://raw.githubusercontent.com/Y4suf/MyVPS/master/setunnel/setunnel.sh && chmod +x setunnel.sh && ./setunel.sh
-
-
 
 ## Description
 
