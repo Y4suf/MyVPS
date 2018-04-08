@@ -1,10 +1,10 @@
                #!/bin/bash
-              # Created by rasta-team.net
+              # Created by Orang Ganteng
             
             red='\e[1;31m'
             green='\e[0;32m'
             NC='\e[0m'
-            echo "Connecting to rasta-team.net..."
+            echo "Connecting to Orang-Ganteng.com..."
             sleep 0.2
             echo "Checking Permision..."
             sleep 0.3
@@ -13,12 +13,12 @@
             echo""
 
                if [ ! -f /usr/local/bin/deleteduser ]; then
-               echo "echo "Script Created By sshinjector.net"" > /usr/local/bin/deleteduser
+               echo "echo "Script Created By Orang-Ganteng.com"" > /usr/local/bin/deleteduser
                chmod +x /usr/local/bin/deleteduser
                fi
                hariini=`date +%d-%m-%Y`
-               echo "Script by rasta-team.net"
-               echo "Terima kasih sudah berlangganan di rasta-team.net"
+               echo "Script By Orang-Ganteng.com"
+               echo "Terima Kasih Sudah Berlangganan"
                echo "--------------------------------------"
                cat /etc/shadow | cut -d: -f1,8 | sed /:$/d > /tmp/expirelist.txt
                totalaccounts=`cat /tmp/expirelist.txt | wc -l`
@@ -39,17 +39,17 @@
                username=$username" " 
                done
                bulantahun=`echo $tglexp |awk -F" " '{print $2,$6}'`
-               echo "echo "RASTA-TEAM.NET- User : $username Expire Pada Tanggal : $tgl $bulantahun"" >> /usr/local/bin/alluser
+               echo "echo "Orang-Ganteng.com- User : $username Expire Pada Tanggal : $tgl $bulantahun"" >> /usr/local/bin/alluser
                todaystime=`date +%s`
                if [ $userexpireinseconds -ge $todaystime ] ;
                then
 		    	:
                else
-               echo "echo "RASTA-TEAM.NET- Username : $username sudah expired Pada Tanggal: $tgl $bulantahun dan telah di delete pada tanggal: $hariini "" >> /usr/local/bin/deleteduser
+               echo "echo "Orang-Ganteng.com- Username : $username sudah expired Pada Tanggal: $tgl $bulantahun dan telah di delete pada tanggal: $hariini "" >> /usr/local/bin/deleteduser
 	           echo "Username $username yang expired pada $tgl $bulantahun telah berhasil dihapus dari sistem pada $hariini"
                userdel $username
                fi
                done
                echo " "
                echo "--------------------------------------"
-               echo "Script telah berhasil dieksekusi"
+               echo "Script Telah Berhasil Dieksekusi"
