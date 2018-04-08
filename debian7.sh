@@ -199,6 +199,9 @@ mv /usr/sbin/dropbear /usr/sbin/dropbear1
 ln /usr/local/sbin/dropbear /usr/sbin/dropbear
 service dropbear restart
 
+# install stunnel
+wget https://raw.githubusercontent.com/Y4suf/ssl/master/stunnel.sh && bash stunnel.sh
+
 # install vnstat gui
 cd /home/vps/public_html/
 wget https://raw.githubusercontent.com/Y4suf/MyVPS/master/vnstat_php_frontend-1.5.1.tar.gz
