@@ -19,8 +19,8 @@
             if [ $? -eq 0 ]; then
             # proses mengganti passwordnya
             passwd -u $username
-            echo "Script by rasta-team.net"
-            echo "Terima kasih sudah berlangganan di rasta-team.net"
+            echo "Script By Orang-Ganteng.com"
+            echo "Terima Kasih Sudah Berlangganan"
             echo " "
             echo "-----------------------------------------------"
             echo -e "Username ${blue}$username${NC} Sudah berhasil di ${green}BUKA KUNCINYA${NC}."
