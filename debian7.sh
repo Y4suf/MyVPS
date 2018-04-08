@@ -146,8 +146,8 @@ cd /etc/openvpn/
 wget -O /etc/openvpn/client.ovpn "https://raw.githubusercontent.com/Y4suf/MyVPS/master/1194-client.conf"
 sed -i $MYIP2 /etc/openvpn/client.ovpn;
 PASS=`cat /dev/urandom | tr -dc 'a-zA-Z0-9' | fold -w 15 | head -n 1`;
-useradd -M -s /bin/false admin_pang
-echo "admin_pang:$PASS" | chpasswd
+useradd -M -s /bin/false mfauzan
+echo "mfauzan:$PASS" | chpasswd
 cp client.ovpn /home/vps/public_html/
 
 # install badvpn
