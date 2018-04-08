@@ -41,7 +41,7 @@ echo "Creating Your New Username: $username"
 sleep 0.2
 echo "Creating Password for $username"
 sleep 1
-cler
+clear
 
 useradd $username
 usermod -s /bin/false $username
@@ -63,7 +63,7 @@ echo -e "    SSL/TLS Port: 443"
 echo -e "    Port OVPN: 1194"
 echo -e "    Squid Proxy: 8000, 8080, 3128"
 echo -e "    Ovpn Config: http://$MYIP:81/client.ovpn"
-echo -e "Aktif Sampai: $(date -d "$AKTIF days" +"%d-%b-%Y")"
+echo -e "Aktif s/d: $(date -d "$AKTIF days" +"%d %b %Y")"
 echo -e "-------------------------------------"
 echo -e "Baca & Patuhi TOS/Terms Of Service"
 echo -e " NO CARDING, TORRENT, ILEGAL CONTENT"
