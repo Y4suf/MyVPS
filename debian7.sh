@@ -84,13 +84,6 @@ wget "http://www.webmin.com/jcameron-key.asc"
 cat dotdeb.gpg | apt-key add -;rm dotdeb.gpg
 cat jcameron-key.asc | apt-key add -;rm jcameron-key.asc
 
-# remove unused
-apt-get -y --purge remove samba*;
-apt-get -y --purge remove apache2*;
-apt-get -y --purge remove sendmail*;
-apt-get -y --purge remove bind9*;
-apt-get -y --purge remove dropbear*;
-
 # update
 apt-get update 
 apt-get -y upgrade
@@ -215,55 +208,19 @@ service dropbear restart
 # install stunnel4
 wget https://raw.githubusercontent.com/Y4suf/ssl/master/stunnel.sh && bash stunnel.sh
 
-# VNSTAT
+# install vnstat gui
 cd /home/vps/public_html/
-wget https://raw.githubusercontent.com/Y4suf/MyVPS/master/vnstat_php_frontend-1.5.1.tar.gz
+wget https://raw.githubusercontent.com/rasta-team/MyVPS/master/vnstat_php_frontend-1.5.1.tar.gz
 tar xf vnstat_php_frontend-1.5.1.tar.gz
 rm vnstat_php_frontend-1.5.1.tar.gz
 mv vnstat_php_frontend-1.5.1 vnstat
 cd vnstat
-if [[ `ifconfig -a | grep "venet0"` ]]
-then
-cekvirt='OpenVZ'
-elif [[ `ifconfig -a | grep "venet0:0"` ]]
-then
-cekvirt='OpenVZ'
-elif [[ `ifconfig -a | grep "venet0:0-00"` ]]
-then
-cekvirt='OpenVZ'
-elif [[ `ifconfig -a | grep "venet0-00"` ]]
-then
-cekvirt='OpenVZ'
-elif [[ `ifconfig -a | grep "eth0"` ]]
-then
-cekvirt='KVM'
-elif [[ `ifconfig -a | grep "eth0:0"` ]]
-then
-cekvirt='KVM'
-elif [[ `ifconfig -a | grep "eth0:0-00"` ]]
-then
-cekvirt='KVM'
-elif [[ `ifconfig -a | grep "eth0-00"` ]]
-then
-cekvirt='KVM'
-fi
-if [ $cekvirt = 'KVM' ]; then
-	sed -i 's/eth0/eth0/g' config.php
-	sed -i "s/\$iface_list = array('eth0', 'sixxs');/\$iface_list = array('eth0');/g" config.php
-	sed -i "s/\$language = 'nl';/\$language = 'en';/g" config.php
-	sed -i 's/Internal/Internet/g' config.php
-	sed -i '/SixXS IPv6/d' config.php
-	cd
-elif [ $cekvirt = 'OpenVZ' ]; then
-	sed -i 's/eth0/venet0/g' config.php
-	sed -i "s/\$iface_list = array('venet0', 'sixxs');/\$iface_list = array('venet0');/g" config.php
-	sed -i "s/\$language = 'nl';/\$language = 'en';/g" config.php
-	sed -i 's/Internal/Internet/g' config.php
-	sed -i '/SixXS IPv6/d' config.php
-	cd
-else
-	cd
-fi
+sed -i "s/\$iface_list = array('eth0', 'sixxs');/\$iface_list = array('eth0');/g" config.php
+sed -i "s/\$language = 'nl';/\$language = 'en';/g" config.php
+sed -i 's/Internal/Internet/g' config.php
+sed -i '/SixXS IPv6/d' config.php
+sed -i "s/\$locale = 'en_US.UTF-8';/\$locale = 'en_US.UTF+8';/g" config.php
+cd
 
 # install fail2ban
 apt-get -y install fail2ban;
