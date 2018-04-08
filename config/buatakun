@@ -46,9 +46,9 @@ usermod -e  $tanggal_expired $username
   echo -e "$password\n$password" | passwd $username
   clear
   
-  echo "Script by Orang Ganteng"
-  echo "Terima kasih sudah berlangganan di Orang-Ganteng.com"
-  echo " "
+  echo "Script By Orang Ganteng"
+  echo "Terima Kasih Yang Sudah Berlangganan"
+  echo ""
 echo -e ""
 echo -e "======================================"
 echo -e "Data Login SSH PREMIUM"
@@ -62,7 +62,7 @@ echo -e "    SSL/TLS Port: 443"
 echo -e "    Port OVPN: 1194"
 echo -e "    Squid Proxy: 3128, 8000, 8080"
 echo -e "    Ovpn Config: http://$MYIP:81/client.ovpn"
-echo -e "Aktif Sampai: $(date -d "$AKTIF days" +"%d-%b-%Y")"
+echo -e "Aktif Sampai: $(date -d "$AKTIF days" +"%d %b %Y")"
 echo -e "-------------------------------------"
 echo -e "Baca & Patuhi TOS/Terms Of Service"
 echo -e " NO CARDING, TORRENT, ILEGAL CONTENT"
