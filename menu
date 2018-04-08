@@ -135,24 +135,24 @@ function used_data(){
 	echo -e "  \e[032;1m23\e[0m\e[037;1m)\e[0m \e[033;1mLihat Daftar User PPTP VPN\e[0m (\e[37;1malluser-pptp\e[0m)"
 	echo ""
 	echo -e "\e[036mSeputar Detail VPS\e[0m"
-	echo -e "  \e[032;1m24\e[0m\e[037;1m)\e[0m \e[035;1mSet Auto Reboot\e[0m (\e[37;1mauto-reboot\e[0m)"
-	echo -e "  \e[032;1m25\e[0m\e[037;1m)\e[0m \e[035;1mSpeedtest\e[0m (\e[37;1mcek-speedttes-vps\e[0m)"
-	echo -e "  \e[032;1m26\e[0m\e[037;1m)\e[0m \e[035;1mMemory Usage\e[0m (\e[37;1mps-mem\e[0m)"
-	echo -e "  \e[032;1m27\e[0m\e[037;1m)\e[0m \e[035;1mUbah OpenVPN Port\e[0m (\e[37;1mchange-openvpn-port\e[0m)"
-	echo -e "  \e[032;1m28\e[0m\e[037;1m)\e[0m \e[035;1mUbah Dropbear Port\e[0m (\e[37;1mchange-dropbear-port\e[0m)"
-	echo -e "  \e[032;1m29\e[0m\e[037;1m)\e[0m \e[035;1mUbah Squid Port\e[0m (\e[37;1mchange-squid-port\e[0m)"
-	echo -e "  \e[032;1m30\e[0m\e[037;1m)\e[0m \e[035;1mRestart OpenVPN\e[0m (\e[37;1mrestart-openvpn\e[0m)"
-	echo -e "  \e[032;1m31\e[0m\e[037;1m)\e[0m \e[035;1mRestart Dropbear\e[0m (\e[37;1mrestart-dropbear\e[0m)"
-	echo -e "  \e[032;1m32\e[0m\e[037;1m)\e[0m \e[035;1mRestart Squid\e[0m (\e[37;1mrestart-squid\e[0m)"
-	echo -e "  \e[032;1m33\e[0m\e[037;1m)\e[0m \e[035;1mRestart Webmin\e[0m (\e[37;1mrestart-webmin\e[0m)"
-	echo -e "  \e[032;1m34\e[0m\e[037;1m)\e[0m \e[035;1mBenchmark\e[0m (\e[37;1mbenchmark\e[0m)"
-	echo -e "  \e[032;1m35\e[0m\e[037;1m)\e[0m \e[035;1mUbah Pasword VPS\e[0m (\e[37;1mpassword\e[0m)"
-	echo -e "  \e[032;1m36\e[0m\e[037;1m)\e[0m \e[035;1mUbah Hostname VPS\e[0m (\e[37;1mhostname\e[0m)"
-	echo -e "  \e[032;1m37\e[0m\e[037;1m)\e[0m \e[035;1mReboot Server\e[0m (\e[37;1mreboot\e[0m)"
+	echo -e "  \e[032;1m24\e[0m\e[037;1m)\e[0m \e[034;1mSet Auto Reboot\e[0m (\e[37;1mauto-reboot\e[0m)"
+	echo -e "  \e[032;1m25\e[0m\e[037;1m)\e[0m \e[034;1mSpeedtest\e[0m (\e[37;1mcek-speedttes-vps\e[0m)"
+	echo -e "  \e[032;1m26\e[0m\e[037;1m)\e[0m \e[034;1mMemory Usage\e[0m (\e[37;1mps-mem\e[0m)"
+	echo -e "  \e[032;1m27\e[0m\e[037;1m)\e[0m \e[034;1mUbah OpenVPN Port\e[0m (\e[37;1mchange-openvpn-port\e[0m)"
+	echo -e "  \e[032;1m28\e[0m\e[037;1m)\e[0m \e[034;1mUbah Dropbear Port\e[0m (\e[37;1mchange-dropbear-port\e[0m)"
+	echo -e "  \e[032;1m29\e[0m\e[037;1m)\e[0m \e[034;1mUbah Squid Port\e[0m (\e[37;1mchange-squid-port\e[0m)"
+	echo -e "  \e[032;1m30\e[0m\e[037;1m)\e[0m \e[034;1mRestart OpenVPN\e[0m (\e[37;1mrestart-openvpn\e[0m)"
+	echo -e "  \e[032;1m31\e[0m\e[037;1m)\e[0m \e[034;1mRestart Dropbear\e[0m (\e[37;1mrestart-dropbear\e[0m)"
+	echo -e "  \e[032;1m32\e[0m\e[037;1m)\e[0m \e[034;1mRestart Squid\e[0m (\e[37;1mrestart-squid\e[0m)"
+	echo -e "  \e[032;1m33\e[0m\e[037;1m)\e[0m \e[034;1mRestart Webmin\e[0m (\e[37;1mrestart-webmin\e[0m)"
+	echo -e "  \e[032;1m34\e[0m\e[037;1m)\e[0m \e[034;1mBenchmark\e[0m (\e[37;1mbenchmark\e[0m)"
+	echo -e "  \e[032;1m35\e[0m\e[037;1m)\e[0m \e[034;1mUbah Pasword VPS\e[0m (\e[37;1mpassword\e[0m)"
+	echo -e "  \e[032;1m36\e[0m\e[037;1m)\e[0m \e[034;1mUbah Hostname VPS\e[0m (\e[37;1mhostname\e[0m)"
+	echo -e "  \e[032;1m37\e[0m\e[037;1m)\e[0m \e[034;1mReboot Server\e[0m (\e[37;1mreboot\e[0m)"
 	echo ""
 	echo -e "\e[036mSeputar Update Premium Script\e[0m"
-	echo -e "  \e[032;1m38\e[0m\e[037;1m)\e[0m \e[034;1mUpdate All Script\e[0m (\e[37;1mupdate\e[0m)"
-	echo -e "  \e[032;1m39\e[0m\e[037;1m)\e[0m \e[034;1mUpdate Menu\e[0m (\e[37;1mupdate-menu\e[0m)"
+	echo -e "  \e[032;1m38\e[0m\e[037;1m)\e[0m \e[035;1mUpdate All Script\e[0m (\e[37;1mupdate\e[0m)"
+	echo -e "  \e[032;1m39\e[0m\e[037;1m)\e[0m \e[035;1mUpdate Menu\e[0m (\e[37;1mupdate-menu\e[0m)"
 	echo ""
 	echo -e "    \e[032;1m x\e[0m\e[037;1m)\e[0m Exit"
 	read -p "Masukkan pilihan anda, kemudian tekan tombol ENTER: " option1
@@ -208,7 +208,7 @@ function used_data(){
               red='\e[1;31m'
               green='\e[0;32m'
               NC='\e[0m'
-              echo "Connecting to Oranh-Ganteng.com..."
+              echo "Connecting to Orang-Ganteng.com..."
               sleep 0.2
 			  echo "Connecting to your ip : $myip ...."
               sleep 2
@@ -221,7 +221,7 @@ function used_data(){
 	           echo "-----------------------------"
                autokilluser
                echo "-----------------------------"
-               echo "AUTO KILL MULTI LOGIN SELESAI"
+               echo "AUTO KILL MULTI LOGIN AKTIF"
                ;;
             13)
                clear
@@ -305,7 +305,7 @@ function used_data(){
 		28)	
 		    clear
             echo "Masukan Port Dropbear yang diinginkan:"
-            read -p "Port: " -e -i 443 PORT
+            read -p "Port: " -e -i 22507 PORT
             sed -i "s/DROPBEAR_PORT=[0-9]*/DROPBEAR_PORT=$PORT/" /etc/default/dropbear
             service dropbear restart
             echo "Dropbear Updated : Port $PORT"
@@ -322,48 +322,66 @@ function used_data(){
             clear
             echo "Service Openvpn restart .................tunggu sebentar"
             service openvpn restart
-            echo "Restart OpenVPN selesai Script By Orang Ganteng"
+            echo "Restart OpenVPN selesai - Script By Orang Ganteng"
 			;;	
 		31)
             clear
             echo "Servie dropbear restart .................tunggu sebentar"
             service dropbear restart
-            echo "Restart Dropbear selesai Script By Orang Ganteng"
+            echo "Restart Dropbear selesai - Script By Orang Ganteng"
             ;;
 		32) 
 		    clear
 		    echo "Service Squid restart .................tunggu sebentar"
 			service squid3 restart
-			echo "Restart Squid selesai Script By Orang Ganteng"
+			echo "Restart Squid selesai - Script By Orang Ganteng"
 			;;
-		33)
+		33) 
+                clear
+		chown -R www-data:www-data /home/vps/public_html
+                service cron restart
+                service nginx start
+                service php-fpm start
+                service vnstat restart
+                service openvpn restart
+                service snmpd restart
+                service ssh restart
+                service dropbear restart
+                service fail2ban restart
+                service squid3 restart
+                service stunnel4 restart
+                service webmin restart
+                clear
+			echo "Done Restart All Selesai - Script By Orang Ganteng"
+			;;
+		34)
 		    clear
 		    /etc/init.d/webmin restart
-		    echo "Restart Webmin selesai Script By Orang Ganteng"
+		    echo "Restart Webmin selesai - Script By Orang Ganteng"
 		    ;;
-		34)
+		35)
 		    clear
             wget freevps.us/downloads/bench.sh -O - -o /dev/null|bash
            ;;
-        35)
+           36)
 		    echo "Masukan Password VPS, yang mau diganti :"
 		    passwd
 			;;	
-		36)
+		37)
                    clear
 			echo "Masukan HOSTNAME VPS, yang mau diganti :"
             echo "  contoh : " hostname Orang-Ganteng
             ;;
-		37)
+		38)
 		    clear
 			reboot
             ;;
-        38)
+        39)
 	clear
             wget -O update https://raw.githubusercontent.com/Y4suf/MyVPS/master/config/update && chmod +x update && ./update
             clear
 	    ;;
-        39)
+        40)
             clear
 	    cd
             wget https://raw.githubusercontent.com/Y4suf/MyVPS/master/menu
