@@ -1,10 +1,10 @@
             #!/bin/bash
-            # Created by rasta-team.net
+            # Created by Orang Ganteng
             
             red='\e[1;31m'
             green='\e[0;32m'
             NC='\e[0m'
-            echo "Connecting to rasta-team.net..."
+            echo "Connecting to Orang-Ganteng.com..."
             sleep 0.2
             echo "Checking Permision..."
             sleep 0.3
