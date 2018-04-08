@@ -1,20 +1,16 @@
 #!/bin/bash
-# Created by Orang Ganteng
+# Created by rasta-team.net
             
             red='\e[1;31m'
             green='\e[0;32m'
             NC='\e[0m'
-            echo "Connecting to Orang-Ganteng.com..."
+            echo "Connecting to rasta-team.net..."
             sleep 0.2
             echo "Checking Permision..."
             sleep 0.3
             echo -e "${green}Permission Accepted...${NC}"
             sleep 1
             echo""
-clear
-echo "------------------------ MEMBUAT AKUN SSH ------------------------"
-echo "          DEVELOPED BY Orang Ganteng . Com (089570379692)           "
-echo ""
 
 read -p "Masukkan Username : " username
 egrep "^$username" /etc/passwd >/dev/null
@@ -41,15 +37,18 @@ echo "Creating Your New Username: $username"
 sleep 0.2
 echo "Creating Password for $username"
 sleep 1
-clear
+
 
 useradd $username
 usermod -s /bin/false $username
 usermod -e  $tanggal_expired $username
   egrep "^$username" /etc/passwd >/dev/null
   echo -e "$password\n$password" | passwd $username
+  clear
   
-echo -e ""
+  echo "Script by Orang Ganteng"
+  echo "Terima kasih sudah berlangganan di Orang-Ganteng.com"
+  echo " "
 echo -e ""
 echo -e "======================================"
 echo -e "Data Login SSH PREMIUM"
@@ -61,9 +60,9 @@ echo -e "    Dropbear Port: 22507, 110, 109, 80"
 echo -e "    OpenSSH Port: 22, 143"
 echo -e "    SSL/TLS Port: 443"
 echo -e "    Port OVPN: 1194"
-echo -e "    Squid Proxy: 8000, 8080, 3128"
+echo -e "    Squid Proxy: 3128, 8000, 8080"
 echo -e "    Ovpn Config: http://$MYIP:81/client.ovpn"
-echo -e "Aktif s/d: $(date -d "$AKTIF days" +"%d %b %Y")"
+echo -e "Aktif Sampai: $(date -d "$AKTIF days" +"%d-%b-%Y")"
 echo -e "-------------------------------------"
 echo -e "Baca & Patuhi TOS/Terms Of Service"
 echo -e " NO CARDING, TORRENT, ILEGAL CONTENT"
