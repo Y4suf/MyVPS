@@ -443,8 +443,8 @@ chmod +x /usr/local/bin/menu
 
 # download script
 cd
-wget -O user-expired.sh "https://raw.githubusercontent.com/Y4suf/MyVPS-3/master/freak/user-expired.sh"
-wget -O /etc/issue.net "https://raw.githubusercontent.com/Y4suf/MyVPS/master/config/banner"
+wget -O user-expired.sh "https://raw.githubusercontent.com/Y4suf/MyVPS/master/config/user-expired.sh"
+wget -O /etc/banner "https://raw.githubusercontent.com/Y4suf/MyVPS/master/config/banner"
 echo "0 0 * * * root /root/user-expired.sh" > /etc/cron.d/user-expired
 echo "0 0 * * * root /sbin/reboot" > /etc/cron.d/reboot
 echo "* * * * * service dropbear restart" > /etc/cron.d/dropbear
