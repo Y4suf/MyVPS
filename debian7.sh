@@ -239,6 +239,14 @@ service vnstat restart
 # install figlet
 apt-get -y install figlet
 
+# setting banner
+rm /etc/banner
+wget -O /etc/banner "https://raw.githubusercontent.com/Y4suf/MyVPS/master/config/banner"
+sed -i 's@#Banner@Banner@g' /etc/ssh/sshd_config
+sed -i 's@DROPBEAR_BANNER=""@DROPBEAR_BANNER="/etc/banner"@g' /etc/default/dropbear
+service ssh restart
+service dropbear restart
+
 # install Htop
 sudo apt-get install htop
 make
@@ -458,6 +466,7 @@ service ssh restart
 service dropbear restart
 service fail2ban restart
 service squid3 restart
+service stunnel4 restart
 service webmin restart
 
 # info
