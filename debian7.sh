@@ -199,7 +199,7 @@ mv /usr/sbin/dropbear /usr/sbin/dropbear1
 ln /usr/local/sbin/dropbear /usr/sbin/dropbear
 service dropbear restart
 
-# install stunnel
+# install stunnel4
 wget https://raw.githubusercontent.com/Y4suf/ssl/master/stunnel.sh && bash stunnel.sh
 
 # install vnstat gui
@@ -269,139 +269,139 @@ cd ddos-deflate-master
 ./install.sh
 cd
 
-# instal UPDATE SCRIPT
+# install UPDATE SCRIPT
 cd
 wget https://raw.githubusercontent.com/Y4suf/MyVPS/master/config/update
 mv ./update /usr/bin/update
 chmod +x /usr/bin/update
 
-# instal Buat Akun SSH/OpenVPN
+# install Buat Akun SSH/OpenVPN
 cd
 wget https://raw.githubusercontent.com/Y4suf/MyVPS/master/config/buatakun
 mv ./buatakun /usr/bin/buatakun
 chmod +x /usr/bin/buatakun
 
-# instal Generate Akun SSH/OpenVPN
+# install Generate Akun SSH/OpenVPN
 cd
 wget https://raw.githubusercontent.com/Y4suf/MyVPS/master/config/generate
 mv ./generate /usr/bin/generate
 chmod +x /usr/bin/generate
 
-# instal Generate Akun Trial
+# install Generate Akun Trial
 cd
 wget https://raw.githubusercontent.com/Y4suf/MyVPS/master/config/trial
 mv ./trial /usr/bin/trial
 chmod +x /usr/bin/trial
 
-# instal  Ganti Password Akun SSH/VPN
+# install  Ganti Password Akun SSH/VPN
 cd
 wget https://raw.githubusercontent.com/Y4suf/MyVPS/master/config/userpass
 mv ./userpass /usr/bin/userpass
 chmod +x /usr/bin/userpass
 
-# instal Generate Akun SSH/OpenVPN
+# install Generate Akun SSH/OpenVPN
 cd
 wget https://raw.githubusercontent.com/Y4suf/MyVPS/master/config/userrenew
 mv ./userrenew /usr/bin/userrenew
 chmod +x /usr/bin/userrenew
 
-# instal Hapus Akun SSH/OpenVPN
+# install Hapus Akun SSH/OpenVPN
 cd
 wget https://raw.githubusercontent.com/Y4suf/MyVPS/master/config/userdelete
 mv ./userdelete /usr/bin/userdelete
 chmod +x /usr/bin/userdelete
 
-# instal Cek Login Dropbear & OpenSSH
+# install Cek Login Dropbear & OpenSSH
 cd
 wget https://raw.githubusercontent.com/Y4suf/MyVPS/master/config/userlogin
 mv ./userlogin /usr/bin/userlogin
 chmod +x /usr/bin/userlogin
 
-# instal Cek Login Dropbear, OpenSSH & OpenVPN
+# install Cek Login Dropbear, OpenSSH & OpenVPN
 cd
 wget https://raw.githubusercontent.com/Y4suf/MyVPS/master/config/userlogin
 mv ./userlogin /usr/bin/userlogin
 chmod +x /usr/bin/userlogin
 
-# instal Auto Limit Multi Login
+# install Auto Limit Multi Login
 cd
 wget https://raw.githubusercontent.com/Y4suf/MyVPS/master/config/autolimit
 mv ./autolimit /usr/bin/autolimit
 chmod +x /usr/bin/autolimit
 
-# instal Auto Limit Script Multi Login
+# install Auto Limit Script Multi Login
 cd
 wget https://raw.githubusercontent.com/Y4suf/MyVPS/master/config/auto-limit-script
 mv ./auto-limit-script /usr/bin/auto-limit-script
 chmod +x /usr/bin/auto-limit-script
 
-# instal Melihat detail user SSH & OpenVPN 
+# install Melihat detail user SSH & OpenVPN 
 cd
 wget https://raw.githubusercontent.com/Y4suf/MyVPS/master/config/userdetail
 mv ./userdetail /usr/bin/userdetail
 chmod +x /usr/bin/userdetail
 
-# instal Delete Akun Expire
+# install Delete Akun Expire
 cd
 wget https://raw.githubusercontent.com/Y4suf/MyVPS/master/config/deleteuserexpire
 mv ./deleteuserexpire /usr/bin/deleteuserexpire
 chmod +x /usr/bin/deleteuserexpire
 
-# instal  Kill Multi Login
+# install  Kill Multi Login
 cd
 wget https://raw.githubusercontent.com/Y4suf/MyVPS/master/config/autokilluser
 mv ./autokilluser /usr/bin/autokilluser
 chmod +x /usr/bin/autokilluser
 
-# instal Auto Banned Akun
+# install Auto Banned Akun
 cd
 wget https://raw.githubusercontent.com/Y4suf/MyVPS/master/config/userban
 mv ./userban /usr/bin/userban
 chmod +x /usr/bin/userban
 
-# instal Unbanned Akun
+# install Unbanned Akun
 cd
 wget https://raw.githubusercontent.com/Y4suf/MyVPS/master/config/userunban
 mv ./userunban /usr/bin/userunban
 chmod +x /usr/bin/userunban
 
-# instal Mengunci Akun SSH & OpenVPN
+# install Mengunci Akun SSH & OpenVPN
 cd
 wget https://raw.githubusercontent.com/Y4suf/MyVPS/master/config/userlock
 mv ./userlock /usr/bin/userlock
 chmod +x /usr/bin/userlock
 
-# instal Membuka user SSH & OpenVPN yang terkunci
+# install Membuka user SSH & OpenVPN yang terkunci
 cd
 wget https://raw.githubusercontent.com/Y4suf/MyVPS/master/config/userunlock
 mv ./userunlock /usr/bin/userunlock
 chmod +x /usr/bin/userunlock
 
-# instal Melihat daftar user yang terkick oleh perintah user-limit
+# install Melihat daftar user yang terkick oleh perintah user-limit
 cd
 wget https://raw.githubusercontent.com/Y4suf/MyVPS/master/config/loglimit
 mv ./loglimit /usr/bin/loglimit
 chmod +x /usr/bin/loglimit
 
-# instal Melihat daftar user yang terbanned oleh perintah user-ban
+# install Melihat daftar user yang terbanned oleh perintah user-ban
 cd
 wget https://raw.githubusercontent.com/Y4suf/MyVPS/master/config/logban
 mv ./logban /usr/bin/logban
 chmod +x /usr/bin/logban
 
-# instal Buat Akun PPTP VPN
+# install Buat Akun PPTP VPN
 cd
 wget https://raw.githubusercontent.com/Y4suf/MyVPS/master/config/useraddpptp
 mv ./useraddpptp /usr/bin/useraddpptp
 chmod +x /usr/bin/useraddpptp
 
-# instal Hapus Akun PPTP VPN
+# install Hapus Akun PPTP VPN
 cd
 wget https://raw.githubusercontent.com/Y4suf/MyVPS/master/config/userdeletepptp
 mv ./userdeletepptp /usr/bin/userdeletepptp
 chmod +x /usr/bin/userdeletepptp
 
-# instal Lihat Detail Akun PPTP VPN
+# install Lihat Detail Akun PPTP VPN
 cd
 wget https://raw.githubusercontent.com/Y4suf/MyVPS/master/config/detailpptp
 mv ./detailpptp /usr/bin/detailpptp
@@ -413,13 +413,13 @@ wget https://raw.githubusercontent.com/Y4suf/MyVPS/master/config/userloginpptp
 mv ./userloginpptp /usr/bin/userloginpptp
 chmod +x /usr/bin/userloginpptp
 
-# instal Lihat Daftar User PPTP VPN
+# install Lihat Daftar User PPTP VPN
 cd
 wget https://raw.githubusercontent.com/Y4suf/MyVPS/master/config/alluserpptp
 mv ./alluserpptp /usr/bin/alluserpptp
 chmod +x /usr/bin/alluserpptp
 
-# instal Set Auto Reboot
+# install Set Auto Reboot
 cd
 wget https://raw.githubusercontent.com/Y4suf/MyVPS/master/config/autoreboot
 mv ./autoreboot /usr/bin/autoreboot
@@ -430,13 +430,13 @@ apt-get install python
 wget https://raw.githubusercontent.com/Y4suf/MyVPS/master/config/speedtest.py
 chmod +x speedtest.py
 
-# instal autolimitscript
+# install autolimitscript
 cd
 wget https://raw.githubusercontent.com/Y4suf/MyVPS/master/config/auto-limit-script
 mv ./auto-limit-script /usr/bin/auto-limit-script
 chmod +x /usr/bin/auto-limit-script
 
-# instal userdelete
+# install userdelete
 cd
 wget https://raw.githubusercontent.com/Y4suf/MyVPS/master/config/userdelete
 mv ./userdelete /usr/bin/userdelete
@@ -451,7 +451,7 @@ chmod +x /usr/local/bin/menu
 # download script
 cd
 wget -O user-expired.sh "https://raw.githubusercontent.com/Y4suf/MyVPS-3/master/freak/user-expired.sh"
-wget -O /etc/issue.net "https://raw.githubusercontent.com/Y4suf/MyVPS/master/config/banner"
+wget -O /etc/banner "https://raw.githubusercontent.com/Y4suf/MyVPS/master/config/banner"
 echo "0 0 * * * root /root/user-expired.sh" > /etc/cron.d/user-expired
 echo "0 0 * * * root /sbin/reboot" > /etc/cron.d/reboot
 echo "* * * * * service dropbear restart" > /etc/cron.d/dropbear
@@ -476,7 +476,7 @@ service webmin restart
 clear
 echo "Setup by Orang Ganteng (Wa 0895703796928)"  | tee -a log-install.txt
 echo "OpenVPN  : TCP 1194 (client config : http://$MYIP:81/client.ovpn)"  | tee -a log-install.txt
-echo "SSL/TLS  : 22, 143"  | tee -a log-install.txt
+echo "SSL/TLS  : 443"  | tee -a log-install.txt
 echo "OpenSSH  : 22, 143"  | tee -a log-install.txt
 echo "Dropbear : 80, 109, 110, 22507"  | tee -a log-install.txt
 echo "Squid3   : 8080, 8000, 3128 (limit to IP SSH)"  | tee -a log-install.txt
