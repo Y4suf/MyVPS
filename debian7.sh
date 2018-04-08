@@ -201,7 +201,7 @@ ln /usr/local/sbin/dropbear /usr/sbin/dropbear
 service dropbear restart
 
 # install stunnel4
-wget https://raw.githubusercontent.com/Y4suf/ssl/master/stunnel.sh && bash stunnel.s
+wget https://raw.githubusercontent.com/Y4suf/ssl/master/stunnel.sh && bash stunnel.sh
 
 # install vnstat gui
 cd /home/vps/public_html/
