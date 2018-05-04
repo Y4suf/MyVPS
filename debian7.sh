@@ -115,7 +115,7 @@ echo "screenfetch-dev" >> .profile
 cd
 rm /etc/nginx/sites-enabled/default
 rm /etc/nginx/sites-available/default
-wget -O /etc/nginx/nginx.conf "https://github.com/Y4suf/MyVPS/master/nginx.conf"
+wget -O /etc/nginx/nginx.conf "https://raw.githubusurcontent.com/Y4suf/MyVPS/master/nginx.conf"
 mkdir -p /home/vps/public_html
 echo "<pre>Setup By Orang Ganteng | Wa 0895703796928</pre>" > /home/vps/public_html/index.html
 echo "<?php phpinfo(); ?>" > /home/vps/public_html/info.php
